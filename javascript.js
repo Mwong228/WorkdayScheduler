@@ -2,7 +2,7 @@ const date = moment().format('MMMM Do YYYY')
 const time = moment().format('HH')
 let currentHour = parseInt(moment().format('HH'))
 
-document.querySelector("#currentDay").innerText = `${date}`
+document.querySelector("#currentDay").innerText = `${date} - Local Time ${time}:00`
 
 for (i = 9; i <= 17; i++) {
     //If current time has already past, the textbox background will be grey to show that the time has past
